@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [GridGroupRowContentTemplate.cs](./CS/App_Code/GridGroupRowContentTemplate.cs) (VB: [GridGroupRowContentTemplate.vb](./VB/App_Code/GridGroupRowContentTemplate.vb))
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx](./VB/Default.aspx))
+* [Scripts.js](./CS/Scripts.js) (VB: [Scripts.js](./VB/Scripts.js))
+* [Styles.css](./CS/Styles.css)
+<!-- default file list end -->
 # ASPxGridView - How to display a Group Summary in group headers
 
 
