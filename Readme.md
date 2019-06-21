@@ -8,6 +8,9 @@
 * [Styles.css](./CS/Styles.css)
 <!-- default file list end -->
 # ASPxGridView - How to display a Group Summary in group headers
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t197688/)**
+<!-- run online end -->
 
 
 The <a href="https://www.devexpress.com/Support/Center/p/T198388">How to implement the Group Header Summary</a> article contains a detailed description of this solution
