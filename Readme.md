@@ -8,11 +8,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/t197688/)**
 <!-- run online end -->
 
-[ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) supports group footer summaries out of the box. Sometimes it is necessary to display group summaries in column headers separately for every group. This example demonstrates one of possible solutions for this task.
+[ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) supports group footer summaries out of the box. It may be necessary to display group summaries in column headers separately for every group. This example demonstrates one of the possible solutions.
 
 ![](grid.png)
 
-To implement group header summaries, create the [GridViewTemplates.GroupRowContent](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewTemplates.GroupRowContent) template. Place an HTML table in the template and assign required CSS classes to its HTML elements. 
+To implement group header summaries, create the [GridViewTemplates.GroupRowContent](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewTemplates.GroupRowContent) template. Place an HTML table in the template and assign the CSS classes to its HTML elements. 
   
 ```cs  
 public class GridGroupRowContentTemplate : ITemplate {  
@@ -71,13 +71,13 @@ Protected Sub CreateGroupRowTable()
 End Sub  
 ```
 
-The `CreateGroupTextCell` method creates the title part.
+The `CreateGroupTextCell` method creates the title.
 
-The `CreateSummaryTextCell` method creates cells of the summary part. The number of cells is equal to total column count. ASPxGridView creates additional indent cells before columns when the data is grouped. When data is grouped by several columns, the total indent count is different in different group rows (deeper child groups have fewer indents. The deepest child has no indent). In this example, the `CreateIndentCells` method generates a correct count of indents depending on group level.
+The `CreateSummaryTextCell` method creates cells for the summary. The number of cells is equal to the total column count. ASPxGridView creates additional indent cells before columns when the data is grouped. When data is grouped by several columns, the total indent count is different in different group rows (deeper child groups have fewer indents. The deepest child has no indent). In this example, the `CreateIndentCells` method generates the correct number of indents depending on the group level.
 
 ## Adjust summary cell width on the client
 
-The client `AdjustSummaryTable` method sets a width of summary cells in the following cases:
+The client `AdjustSummaryTable` method sets the width of summary cells in the following cases:
 * Grid is initialized.
 * Grid is resized.
 * Grid sends a callback.
@@ -98,7 +98,7 @@ function AdjustSummaryTable() {
 
 ## CSS resources
 
-This solution contains several static CSS rules (see the [Styles.css](./CS/Styles.css) file). Use the following rules to set the required cell background colors or just remove them to get default background color.  
+This solution contains several static CSS rules (see the [Styles.css](./CS/Styles.css) file). Use the following rules to set the cell background colors or just remove them to get the default background color.  
 
 ```css
 .summaryTable tr:last-child td:nth-of-type(even) {
@@ -112,7 +112,7 @@ This solution contains several static CSS rules (see the [Styles.css](./CS/Style
 ## How to integrate this solution to a real project
   
 
-1. Include **GridGroupRowContentTemplate.cs**, **Scripts.js** and **Styles.css** files to your project.  
+1. Include **GridGroupRowContentTemplate.cs**, **Scripts.js**, and **Styles.css** files in your project.  
 2. Assign the `GridGroupRowContentTemplate` class to the [GridViewTemplates.GroupRowContent](https://documentation.devexpress.com/#AspNet/DevExpressWebGridViewTemplates_GroupRowContenttopic) template at runtime:  
   
     ```cs  
