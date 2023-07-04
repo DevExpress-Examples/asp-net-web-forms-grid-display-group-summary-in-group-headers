@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to display group summary in group headers
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t197688/)**
+**[[Run Online]](https://codecentral.devexpress.com/128533849/)**
 <!-- run online end -->
 
 [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) supports group footer summaries out of the box. It may be necessary to display group summaries in column headers separately for every group. This example demonstrates one of the possible solutions.
