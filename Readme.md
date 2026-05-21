@@ -158,7 +158,7 @@ This solution contains several static CSS rules (see the [Styles.css](./CS/Style
 
 ## More Examples
 
-* [Grid View for ASP.NET MVC - How to display group summary in group headers](https://supportcenter.devexpress.com/internal/ticket/details/T446118#)  
+* [Grid View for ASP.NET MVC - How to display group summary in group headers](https://supportcenter.devexpress.com/ticket/details/t446118)  
 <!-- feedback -->
 ## Does This Example Address Your Development Requirements/Objectives?
 
